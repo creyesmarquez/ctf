@@ -1,0 +1,16 @@
+{
+  "en": {
+    "header": "Spring",
+    "paragraf": "Hello",
+    "lang-choice": "Choose your language:",
+    "header1": "CHURCH LIFE",
+    "header2": "JOIN THE TEAM"
+  },
+  "fr": {
+    "header": "Printemps",
+    "paragraf": "Bonjour",
+    "lang-choice": "Choisir votre langue",
+    "header1": "Nous connaître",
+    "header2": "Joins l'équipe"
+  }
+}

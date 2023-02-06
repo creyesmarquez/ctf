@@ -1,0 +1,33 @@
+.nav {
+  background-color: white;
+  color: 1b2246;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  align-items: inherit;
+}
+.nav a.active {
+  color: #828fa6;
+}
+
+.nav a:hover {
+  color: #828fa6;
+}
+
+.nav a {
+  color: #1b2246;
+  text-decoration: none;
+}
+
+.lang-switcher {
+}
