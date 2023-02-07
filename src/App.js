@@ -1,4 +1,3 @@
-import "./components/styles/App.css";
 import Navbar from "./components/Navbar";
 import About from "./components/pages/About";
 import Values from "./components/pages/Values";
@@ -7,6 +6,7 @@ import Contact from "./components/pages/Contact";
 import Team from "./components/pages/Team";
 import Home from "./components/pages/Home";
 import { Routes, Route } from "react-router-dom";
+import React from "react";
 
 function App() {
   return (
