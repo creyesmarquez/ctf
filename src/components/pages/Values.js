@@ -1,5 +1,7 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 export default function Values() {
-  return <h1>Nos valeurs</h1>;
+  const { t } = useTranslation();
+  return <h1>{t("Values")}</h1>;
 }

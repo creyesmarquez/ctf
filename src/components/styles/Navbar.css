@@ -29,5 +29,9 @@
   text-decoration: none;
 }
 
-.lang-switcher {
+#dropdown-basic {
+  background-color: white;
+  color: #1b2246;
+  cursor: pointer;
+  border: none;
 }

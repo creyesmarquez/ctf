@@ -1,5 +1,7 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 export default function Team() {
-  return <h1>Joins l'équipe</h1>;
+  const { t } = useTranslation();
+  return <h1>{t("Team")}</h1>;
 }
