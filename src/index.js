@@ -14,19 +14,13 @@ i18n
   .use(HttpApi)
   .init({
     supportedLngs: ["en", "fr"],
-    // the translations
-    // (tip move them in a JSON file and import them,
-    // or even better, manage them via a UI: https://react.i18next.com/guides/multiple-translation-files#manage-your-translations-with-a-management-gui)
-    fallbackLng: "en",
+    fallbackLng: "fr",
     detection: {
       order: ["cookie", "htmlTag", "localStorage", "path", "subdomain"],
       caches: ["cookie"],
     },
     backend: {
       loadPath: "/i18n/{{lng}}.json",
-    },
-    react: {
-      useSuspense: false,
     },
   });
 

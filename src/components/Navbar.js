@@ -6,6 +6,7 @@ import i18next from "i18next";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles/Navbar.css";
 import "../../node_modules/flag-icons/css/flag-icons.min.css";
+import cookies from "js-cookie";
 
 const GlobeIcon = ({ height = 24, width = 24 }) => (
   <svg
@@ -35,14 +36,8 @@ const languages = [
 
 function Navbar() {
   const { t } = useTranslation();
-  // get i18n value form cookie
-  const lang = document.cookie
-
-    .split("; ")
-    .find((row) => row.startsWith("i18next"))
-    .split("=")[1];
-
-  const logo = require(`../assets/images/sitelogo${lang}.png`);
+  const currentLanguageCode = cookies.get("i18next") || "fr";
+  const logo = require(`../assets/images/sitelogo${currentLanguageCode}.png`);
 
   return (
     <nav className="nav">
@@ -73,8 +68,14 @@ function Navbar() {
         <Dropdown.Menu>
           {languages.map(({ code, name, country_code }) => (
             <li key={country_code}>
-              <Dropdown.Item onClick={() => i18next.changeLanguage(code)}>
-                <span class={`fi fi-${country_code} fis mx-2`}></span>
+              <Dropdown.Item
+                onClick={() => i18next.changeLanguage(code)}
+                disabled={code === currentLanguageCode}
+              >
+                <span
+                  class={`fi fi-${country_code} fis mx-2`}
+                  style={{ opacity: code === currentLanguageCode ? 0.5 : 1 }}
+                ></span>
                 {name}
               </Dropdown.Item>
             </li>
