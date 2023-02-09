@@ -21,7 +21,7 @@ export const LanguageSwitcher = () => {
   const currentLanguageCode = cookies.get("i18next") || "fr";
 
   return (
-    <Dropdown>
+    <Dropdown id="dropdown">
       <Dropdown.Toggle variant="success" id="dropdown-basic">
         <GlobeIcon />
       </Dropdown.Toggle>
