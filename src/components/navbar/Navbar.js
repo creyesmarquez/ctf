@@ -50,6 +50,39 @@ function SiteLogo() {
 function Navbar() {
   const { t } = useTranslation();
   return (
+    <>
+      <a
+        class="close-navbar-toggler collapsed"
+        data-toggle="collapse"
+        data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      ></a>
+
+      <nav className="navbar navbar-expand-lg navbar-light">
+        <SiteLogo />
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul className="navbar-nav mr-auto mt-2 mt-md-0">
+            <CustomLink to="about">{t("About")}</CustomLink>
+            <CustomLink to="team">{t("Team")}</CustomLink>
+            <CustomLink to="values">{t("Values")}</CustomLink>
+            <CustomLink to="contact">{t("Contact")}</CustomLink>
+            <CustomLink to="donations">{t("Donations")}</CustomLink>
+          </ul>
+          <LanguageSwitcher />
+        </div>
+      </nav>
+    </>
     // <nav className="nav">
     //   <ul>
     //     <SiteLogo />
@@ -61,29 +94,6 @@ function Navbar() {
     //   </ul>
     //   <LanguageSwitcher />
     // </nav>
-
-    <nav className="navbar navbar-expand-lg navbar-light">
-      <SiteLogo />
-      <button
-        className="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown"
-      >
-        <span className="navbar-toggler-icon"></span>
-      </button>
-      <div className="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul className="navbar-nav mr-auto mt-2 mt-md-0">
-          <CustomLink to="about">{t("About")}</CustomLink>
-          <CustomLink to="team">{t("Team")}</CustomLink>
-          <CustomLink to="values">{t("Values")}</CustomLink>
-          <CustomLink to="contact">{t("Contact")}</CustomLink>
-          <CustomLink to="donations">{t("Donations")}</CustomLink>
-        </ul>
-        <LanguageSwitcher />
-      </div>
-    </nav>
   );
 }
 
