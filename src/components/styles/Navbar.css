@@ -6,6 +6,7 @@
   display: grid;
   justify-content: center;
 }
+
 #nav-link.active {
   color: #828fa6;
 }
@@ -13,11 +14,13 @@
 #nav-link:hover {
   color: #828fa6;
 }
+
 #dropdown-basic {
   background-color: transparent;
   color: #1b2246;
   border: none;
 }
+
 .navbar-toggler .icon-bar {
   margin: 7px;
   display: block;
@@ -28,6 +31,8 @@
 }
 
 #dropdown {
+  display: grid;
   margin-inline-start: auto;
+  justify-content: center;
   border: none;
 }
