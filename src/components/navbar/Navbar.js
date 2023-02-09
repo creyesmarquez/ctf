@@ -50,16 +50,15 @@ function SiteLogo() {
 function Navbar() {
   const { t } = useTranslation();
   return (
-    <>
-      <a
+    <div>
+      <div
         class="close-navbar-toggler collapsed"
         data-toggle="collapse"
         data-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown"
         aria-expanded="false"
         aria-label="Toggle navigation"
-      ></a>
-
+      ></div>
       <nav className="navbar navbar-expand-lg navbar-light">
         <SiteLogo />
         <button
@@ -82,18 +81,7 @@ function Navbar() {
           <LanguageSwitcher />
         </div>
       </nav>
-    </>
-    // <nav className="nav">
-    //   <ul>
-    //     <SiteLogo />
-    //     <CustomLink to="about">{t("About")}</CustomLink>
-    //     <CustomLink to="team">{t("Team")}</CustomLink>
-    //     <CustomLink to="values">{t("Values")}</CustomLink>
-    //     <CustomLink to="contact">{t("Contact")}</CustomLink>
-    //     <CustomLink to="donations">{t("Donations")}</CustomLink>
-    //   </ul>
-    //   <LanguageSwitcher />
-    // </nav>
+    </div>
   );
 }
 
