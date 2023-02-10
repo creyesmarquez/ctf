@@ -1,69 +1,99 @@
 import React from "react";
-const Footer = () => {
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import "../styles/Footer.css";
+import { useTranslation } from "react-i18next";
+
+import {
+  MDBFooter,
+  MDBContainer,
+  MDBCol,
+  MDBRow,
+  MDBIcon,
+} from "mdb-react-ui-kit";
+
+export const Footer = () => {
+  const logo = require(`../../assets/images/primarylogo.png`);
+  const { t } = useTranslation();
+
   return (
-    <footer class="bg-dark text-center text-white">
-      <div class="container p-4 pb-0">
-        <section class="mb-4">
-          <a
-            class="btn btn-outline-light btn-floating m-1"
-            href="#!"
-            role="button"
-          >
-            <i class="fab fa-facebook-f"></i>
-          </a>
-
-          <a
-            class="btn btn-outline-light btn-floating m-1"
-            href="#!"
-            role="button"
-          >
-            <i class="fab fa-twitter"></i>
-          </a>
-
-          <a
-            class="btn btn-outline-light btn-floating m-1"
-            href="#!"
-            role="button"
-          >
-            <i class="fab fa-google"></i>
-          </a>
-
-          <a
-            class="btn btn-outline-light btn-floating m-1"
-            href="#!"
-            role="button"
-          >
-            <i class="fab fa-instagram"></i>
-          </a>
-
-          <a
-            class="btn btn-outline-light btn-floating m-1"
-            href="#!"
-            role="button"
-          >
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-
-          <a
-            class="btn btn-outline-light btn-floating m-1"
-            href="#!"
-            role="button"
-          >
-            <i class="fab fa-github"></i>
-          </a>
-        </section>
-      </div>
-
-      <div
-        class="text-center p-3"
-        style="background-color: rgba(0, 0, 0, 0.2);"
-      >
-        © 2020 Copyright:
-        <a class="text-white" href="https://mdbootstrap.com/">
-          MDBootstrap.com
+    <MDBFooter bgColor="light" className="text-center text-lg-start text-muted">
+      <section className="d-flex justify-content-center p-2 border-bottom">
+        <a
+          href="https://www.facebook.com/profile.php?id=100064757978766"
+          target="_blank"
+          without
+          rel="noopener noreferrer"
+          className="p-3 text-reset"
+        >
+          <MDBIcon fab icon="facebook-f" />
         </a>
-      </div>
-    </footer>
+        <a
+          href="https://www.instagram.com/ctfsherbrooke/"
+          target="_blank"
+          without
+          rel="noopener noreferrer"
+          className="p-3 text-reset"
+        >
+          <MDBIcon fab icon="instagram" />
+        </a>
+        <a
+          href="https://www.youtube.com/@catchthefiresherbrooke6374"
+          target="_blank"
+          without
+          rel="noopener noreferrer"
+          className="p-3 text-reset"
+        >
+          <MDBIcon fab icon="youtube" />
+        </a>
+      </section>
+
+      <section id="section-footer">
+        <MDBContainer className="p-4">
+          <MDBRow className="mt-3">
+            <MDBCol md="3" lg="4" xl="3" className="mx-auto mb-4">
+              <h6 className="text-uppercase fw-bold mb-4">
+                <img
+                  src={logo}
+                  alt="logo"
+                  style={{
+                    maxWidth: 300,
+                    width: 300,
+                  }}
+                />
+              </h6>
+              <p>{t("ctf-footer")}</p>
+            </MDBCol>
+
+            <MDBCol md="2" lg="2" xl="2" className="mx-auto mb-4">
+              <h6 className="text-uppercase fw-bold mb-4">
+                {t("useful-links")}
+              </h6>
+              <p>
+                <a href="#!" className="text-reset">
+                  {t("back-to-top")}
+                </a>
+              </p>
+            </MDBCol>
+
+            <MDBCol md="4" lg="3" xl="4" className="mx-auto mb-md-0 mb-4">
+              <h6 className="text-uppercase fw-bold mb-4">{t("contact-us")}</h6>
+              <p>
+                <MDBIcon icon="home" className="me-2" />
+                219 Queen St, Sherbrooke, Quebec J1M 1K4
+              </p>
+              <p>
+                <MDBIcon icon="envelope" className="me-2" />
+                daniel.peiry@catchthefire.com
+              </p>
+              <p>
+                <MDBIcon icon="phone" className="me-2" />
+                (819) 565-2034
+              </p>
+            </MDBCol>
+          </MDBRow>
+        </MDBContainer>
+      </section>
+    </MDBFooter>
   );
 };
 

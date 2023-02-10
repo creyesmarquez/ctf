@@ -7,12 +7,13 @@ import Team from "./components/pages/Team";
 import Home from "./components/pages/Home";
 import { Routes, Route } from "react-router-dom";
 import React from "react";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
     <>
       <Navbar />
-      <div className="container">
+      <div id="container">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="about" element={<About />} />
@@ -22,6 +23,7 @@ function App() {
           <Route path="contact" element={<Contact />} />
         </Routes>
       </div>
+      <Footer />
     </>
   );
 }

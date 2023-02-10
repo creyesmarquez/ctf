@@ -50,7 +50,7 @@ function SiteLogo() {
 function Navbar() {
   const { t } = useTranslation();
   return (
-    <div>
+    <div id="header">
       <div
         class="close-navbar-toggler collapsed"
         data-toggle="collapse"
