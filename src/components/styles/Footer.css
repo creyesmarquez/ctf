@@ -11,3 +11,7 @@
   align-items: center;
   justify-content: center;
 }
+#footer-container {
+  background-color: #1b2246;
+  color: white;
+}

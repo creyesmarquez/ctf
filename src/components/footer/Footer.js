@@ -3,25 +3,25 @@ import "../styles/Footer.css";
 import { useTranslation } from "react-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
+  faEnvelope,
+  faHouse,
+  faPhone,
+} from "@fortawesome/free-solid-svg-icons";
+
+import {
   faFacebook,
   faInstagram,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 
-import {
-  MDBFooter,
-  MDBContainer,
-  MDBCol,
-  MDBRow,
-  MDBIcon,
-} from "mdb-react-ui-kit";
+import { MDBFooter, MDBContainer, MDBCol, MDBRow } from "mdb-react-ui-kit";
 
 export const Footer = () => {
-  const logo = require(`../../assets/images/primarylogo.png`);
+  const logo = require(`../../assets/images/primarylogowhitered.png`);
   const { t } = useTranslation();
 
   return (
-    <MDBFooter bgColor="light" className="text-center text-lg-start text-muted">
+    <MDBFooter className="text-center text-lg-start " id="footer-container">
       <section className="d-flex justify-content-center p-2 border-bottom">
         <a
           href="https://www.facebook.com/profile.php?id=100064757978766"
@@ -83,15 +83,15 @@ export const Footer = () => {
             <MDBCol md="4" lg="3" xl="4" className="mx-auto mb-md-0 mb-4">
               <h6 className="text-uppercase fw-bold mb-4">{t("contact-us")}</h6>
               <p>
-                <MDBIcon icon="home" className="me-2" />
-                219 Queen St, Sherbrooke, Quebec J1M 1K4
+                <FontAwesomeIcon icon={faHouse} className="me-2" />
+                Sherbrooke, Quebec J1M 1K4
               </p>
               <p>
-                <MDBIcon icon="envelope" className="me-2" />
+                <FontAwesomeIcon icon={faEnvelope} className="me-2" />
                 daniel.peiry@catchthefire.com
               </p>
               <p>
-                <MDBIcon icon="phone" className="me-2" />
+                <FontAwesomeIcon icon={faPhone} className="me-2" />
                 (819) 565-2034
               </p>
             </MDBCol>

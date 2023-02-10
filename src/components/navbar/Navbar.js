@@ -52,7 +52,7 @@ function Navbar() {
   return (
     <div id="header">
       <div
-        class="close-navbar-toggler collapsed"
+        className="close-navbar-toggler collapsed"
         data-toggle="collapse"
         data-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown"
