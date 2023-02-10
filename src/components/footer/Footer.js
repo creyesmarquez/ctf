@@ -1,7 +1,12 @@
 import React from "react";
-import "@fortawesome/fontawesome-free/css/all.min.css";
 import "../styles/Footer.css";
 import { useTranslation } from "react-i18next";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebook,
+  faInstagram,
+  faYoutube,
+} from "@fortawesome/free-brands-svg-icons";
 
 import {
   MDBFooter,
@@ -25,7 +30,7 @@ export const Footer = () => {
           rel="noopener noreferrer"
           className="p-3 text-reset"
         >
-          <MDBIcon fab icon="facebook-f" />
+          <FontAwesomeIcon icon={faFacebook} />
         </a>
         <a
           href="https://www.instagram.com/ctfsherbrooke/"
@@ -34,7 +39,7 @@ export const Footer = () => {
           rel="noopener noreferrer"
           className="p-3 text-reset"
         >
-          <MDBIcon fab icon="instagram" />
+          <FontAwesomeIcon icon={faInstagram} />
         </a>
         <a
           href="https://www.youtube.com/@catchthefiresherbrooke6374"
@@ -43,7 +48,7 @@ export const Footer = () => {
           rel="noopener noreferrer"
           className="p-3 text-reset"
         >
-          <MDBIcon fab icon="youtube" />
+          <FontAwesomeIcon icon={faYoutube} />
         </a>
       </section>
 
