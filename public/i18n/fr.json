@@ -3,9 +3,17 @@
   "Team": "Joins l'équipe",
   "Values": "Nos valeurs",
   "Contact": "Nous joindre",
-  "Donations": "Faire un don",
+  "Donations": "Donations",
+  "donation-title": "Donner en ligne",
+  "paypal-description": "Vous pouvez faire un don en ligne via paypal en cliquant sur l'image suivante.",
+  "transfer-description": "Vous pouvez faire un don par e-transfer à sherbrooke@catchethefire.com et utiliser le mot de passe suivant: CTFSHERBROOKE",
+  "donation-others": "Autres moyens de donner",
+  "donation-needs": "Ministère de compassion",
+  "donation-needs-description": "Notre ministère de compassion pour les gens sans abri a besoin de support.  Notre équipe sort 2 à 3 fois par semaine, pour nourrir, vêtir, apporter du réconfort à ces personnes et prier pour eux.  Les besoins actuels sont:  couverture, sacs de couchage, tuques, gants, mitaines, bottes d'hiver, manteaux d'hiver.  Svp soyez généreux.  Pour aider ce ministère, svp contacter Stephen Goddard (**courriel**) en message privé.  Il vous donnera la procédure à suivre.  Merci beaucoup !",
   "useful-links": "Liens utiles",
   "ctf-footer": "Catch The Fire est un ministère international avec des églises, écoles, missions, évenements partout dans le monde. Pour plus d'information, visitez CatchTheFire.com.",
   "back-to-top": "Retour en haut",
-  "contact-us": "Nous joindre"
+  "contact-us": "Nous joindre",
+  "welcome": "Bienvenue à l’église Catch the Fire Sherbrooke",
+  "welcome-description": "Nous sommes une famille passionnée par la présence de Dieu, prête à impacter les gens qui nous entourent et faire la différence dans notre ville et notre province. Nous sommes appelés Catch the Fire ! Viens attraper le feu de Dieu avec nous! "
 }

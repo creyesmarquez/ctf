@@ -1,0 +1,14 @@
+#description {
+  font-family: nort;
+  font-size: 17px;
+  font-weight: 300;
+  color: #192043;
+  display: flex;
+  justify-content: center;
+}
+
+#title {
+  font-family: nort;
+  font-size: xx-large;
+  color: #1b2246;
+}
