@@ -8,14 +8,12 @@ import Home from "./components/pages/Home";
 import { Routes, Route } from "react-router-dom";
 import React from "react";
 import Footer from "./components/footer/Footer";
-import { Container } from "react-bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
     <>
       <Navbar />
-      <Container>
+      <div className="container-fluid" id="container" style={{ padding: "0" }}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="about" element={<About />} />
@@ -24,7 +22,7 @@ function App() {
           <Route path="donations" element={<Donations />} />
           <Route path="contact" element={<Contact />} />
         </Routes>
-      </Container>
+      </div>
       <Footer />
     </>
   );

@@ -1,6 +1,6 @@
 #donation-title {
   font-family: nort;
-  font-size: 40px;
+  font-size: 80px;
   color: #1b2246;
   font-weight: 700;
   display: flex;
@@ -12,4 +12,21 @@
   font-size: 18px;
   font-weight: 300;
   color: #192043;
+}
+
+#image-container {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 80px;
+  font-weight: 700;
+  font-family: nort;
+}
+
+#centered {
+  position: absolute;
+  width: max-content;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

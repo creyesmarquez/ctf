@@ -5,7 +5,7 @@ import "../styles/Donations.css";
 
 const Gift = () => {
   const { t } = useTranslation();
-  const logo = require(`../../assets/images/donation-need.png`);
+  const logo = require(`../../assets/images/compassion.png`);
 
   return (
     <>
@@ -60,14 +60,19 @@ const Paypal = () => {
 
 export default function Donations() {
   const { t } = useTranslation();
+  const logo = require(`../../assets/images/test2.png`);
   return (
     <>
+      <div id="image-container">
+        <img src={logo} class="img-fluid" alt="logo" />
+        <div id="centered">{t("donation-centered")}</div>
+      </div>
       <Row className="d-flex justify-content-md-center mt-5 ">
         <Col>
           <p id="donation-title">{t("donation-title")}</p>
         </Col>
       </Row>
-      <Row className="d-flex justify-content-md-center mt-5">
+      <Row className="d-flex justify-content-md-center mt-5 p-5">
         <Paypal />
         <Transfert />
         <span className="border-bottom" style={{ marginTop: "inherit" }}></span>
@@ -78,6 +83,8 @@ export default function Donations() {
         </Col>
       </Row>
       <Row className="text-center p-5">
+        <Gift />
+        <Gift />
         <Gift />
       </Row>
     </>
