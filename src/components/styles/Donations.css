@@ -1,6 +1,6 @@
 #donation-title {
   font-family: nort;
-  font-size: 80px;
+  font-size: 5vw;
   color: #1b2246;
   font-weight: 700;
   display: flex;
@@ -9,16 +9,20 @@
 
 #donation-description {
   font-family: nort;
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: 300;
   color: #192043;
+}
+#more-donations {
+  justify-content: space-around;
+  margin: auto;
 }
 
 #image-container {
   position: relative;
   text-align: center;
   color: white;
-  font-size: 80px;
+  font-size: 6vw;
   font-weight: 700;
   font-family: nort;
 }
@@ -29,4 +33,24 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+#don-separator-1 {
+  background-color: #6874a3;
+  height: 30vw;
+  align-content: center;
+}
+
+#don-separator-1-title {
+  justify-content: center;
+  font-size: 6vw;
+  color: white;
+}
+
+#don-separator-1-content {
+  margin: auto;
+  width: 50vw;
+  text-align: center;
+  font-size: 2vw;
+  color: white;
 }

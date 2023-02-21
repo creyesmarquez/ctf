@@ -1,22 +1,8 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
+import { MoreDonations } from "../donations/MoreDonations";
 import "../styles/Donations.css";
-
-const Gift = () => {
-  const { t } = useTranslation();
-  const logo = require(`../../assets/images/compassion.png`);
-
-  return (
-    <>
-      <Col className="">
-        <img width="100" src={logo} alt="logo" />
-        <h4>{t("donation-needs")}</h4>
-        <p id="donation-description">{t("donation-needs-description")}</p>
-      </Col>
-    </>
-  );
-};
 
 const Transfert = () => {
   const { t } = useTranslation();
@@ -28,8 +14,13 @@ const Transfert = () => {
         <h4>E-Transfer</h4>
         <p id="donation-description">{t("transfer-description")}</p>
       </Col>
-      <Col style={{ display: "contents" }}>
-        <img width="150" src={logo} alt="logo" />
+      <Col
+        style={{
+          display: "grid",
+          placeItems: "center",
+        }}
+      >
+        <img class="img-fluid" width="150" src={logo} alt="logo" />
       </Col>
     </>
   );
@@ -41,17 +32,29 @@ const Paypal = () => {
 
   return (
     <>
-      <Col className="p-2">
+      <Col className="">
         <h4>Paypal</h4>
         <p id="donation-description">{t("paypal-description")}</p>
       </Col>
-      <Col>
+      <Col
+        style={{
+          display: "grid",
+          placeItems: "center",
+        }}
+      >
         <a
           href="https://www.paypal.com/donate?hosted_button_id=7DBCL2Z672PNN"
           target="_blank"
           rel="noreferrer"
         >
-          <img width="220" border="0" align="center" src={logo} alt="logo" />
+          <img
+            class="img-fluid"
+            width="220"
+            border="0"
+            align="center"
+            src={logo}
+            alt="logo"
+          />
         </a>
       </Col>
     </>
@@ -67,26 +70,25 @@ export default function Donations() {
         <img src={logo} class="img-fluid" alt="logo" />
         <div id="centered">{t("donation-centered")}</div>
       </div>
+      <Row id="don-separator-1">
+        <Row id="don-separator-1-title"> {t("don-separator-1-title")}</Row>
+        <Row xs={2} id="don-separator-1-content">
+          {" "}
+          {t("don-separator-1-content")}
+        </Row>
+      </Row>
+
       <Row className="d-flex justify-content-md-center mt-5 ">
         <Col>
           <p id="donation-title">{t("donation-title")}</p>
         </Col>
       </Row>
-      <Row className="d-flex justify-content-md-center mt-5 p-5">
+      <Row className="mt-2 mb-2 p-5">
         <Paypal />
         <Transfert />
-        <span className="border-bottom" style={{ marginTop: "inherit" }}></span>
+        <span className="border-bottom" style={{ marginTop: "3rem" }}></span>
       </Row>
-      <Row className="d-flex justify-content-md-center mt-5">
-        <Col>
-          <p id="donation-title">{t("donation-others")}</p>
-        </Col>
-      </Row>
-      <Row className="text-center p-5">
-        <Gift />
-        <Gift />
-        <Gift />
-      </Row>
+      <MoreDonations />
     </>
   );
 }

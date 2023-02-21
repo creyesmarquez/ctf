@@ -18,14 +18,7 @@ export const Footer = () => {
         <MDBContainer className="p-4">
           <MDBRow className="mt-3">
             <MDBCol md="3" lg="4" xl="3" className="mx-auto mb-4">
-              <img
-                src={logo}
-                alt="logo"
-                style={{
-                  maxWidth: 300,
-                  width: 300,
-                }}
-              />
+              <img src={logo} alt="logo" maxWidth="300" width="300" />
               <p>{t("ctf-footer")}</p>
             </MDBCol>
             <UsefulLinks />
