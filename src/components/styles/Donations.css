@@ -1,5 +1,4 @@
 #donation-title {
-  font-family: nort;
   font-size: 5vw;
   color: #1b2246;
   font-weight: 700;
@@ -8,11 +7,11 @@
 }
 
 #donation-description {
-  font-family: nort;
   font-size: 1rem;
   font-weight: 300;
   color: #192043;
 }
+
 #more-donations {
   justify-content: space-around;
   margin: auto;
@@ -24,7 +23,6 @@
   color: white;
   font-size: 6vw;
   font-weight: 700;
-  font-family: nort;
 }
 
 #centered {

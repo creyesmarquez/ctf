@@ -11,7 +11,7 @@ export function SocialIcons() {
       <a
         href="https://www.facebook.com/profile.php?id=100064757978766"
         target="_blank"
-        without
+        without="true"
         rel="noopener noreferrer"
         className="p-3 text-reset"
       >
@@ -20,7 +20,7 @@ export function SocialIcons() {
       <a
         href="https://www.instagram.com/ctfsherbrooke/"
         target="_blank"
-        without
+        without="true"
         rel="noopener noreferrer"
         className="p-3 text-reset"
       >
@@ -29,7 +29,7 @@ export function SocialIcons() {
       <a
         href="https://www.youtube.com/@catchthefiresherbrooke6374"
         target="_blank"
-        without
+        without="true"
         rel="noopener noreferrer"
         className="p-3 text-reset"
       >

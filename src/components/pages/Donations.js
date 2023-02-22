@@ -10,18 +10,18 @@ const Transfert = () => {
 
   return (
     <>
-      <Col>
+      <Row>
         <h4>E-Transfer</h4>
         <p id="donation-description">{t("transfer-description")}</p>
-      </Col>
-      <Col
-        style={{
-          display: "grid",
-          placeItems: "center",
-        }}
-      >
-        <img class="img-fluid" width="150" src={logo} alt="logo" />
-      </Col>
+      </Row>
+      <Row>
+        <img
+          className="img-fluid"
+          style={{ width: "150px" }}
+          src={logo}
+          alt="logo"
+        />
+      </Row>
     </>
   );
 };
@@ -32,31 +32,25 @@ const Paypal = () => {
 
   return (
     <>
-      <Col className="">
+      <Row>
         <h4>Paypal</h4>
         <p id="donation-description">{t("paypal-description")}</p>
-      </Col>
-      <Col
-        style={{
-          display: "grid",
-          placeItems: "center",
-        }}
-      >
+      </Row>
+      <Row>
         <a
           href="https://www.paypal.com/donate?hosted_button_id=7DBCL2Z672PNN"
           target="_blank"
           rel="noreferrer"
         >
           <img
-            class="img-fluid"
+            className="img-fluid"
             width="220"
-            border="0"
             align="center"
             src={logo}
             alt="logo"
           />
         </a>
-      </Col>
+      </Row>
     </>
   );
 };
@@ -67,7 +61,7 @@ export default function Donations() {
   return (
     <>
       <div id="image-container">
-        <img src={logo} class="img-fluid" alt="logo" />
+        <img src={logo} className="img-fluid" alt="logo" />
         <div id="centered">{t("donation-centered")}</div>
       </div>
       <Row id="don-separator-1">
