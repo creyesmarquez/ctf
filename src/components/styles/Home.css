@@ -1,15 +1,19 @@
 #title {
   font-size: 5vw;
-  font-weight: 500;
-  color: #1b2246;
+  font-weight: 700;
+  color: white;
   text-align: center;
   margin: auto;
+}
+
+#title-container {
+  background-color: #7e86a5;
 }
 
 #sub-title {
   font-size: 2vw;
   font-weight: 200;
-  color: #1b2246;
+  color: white;
   text-align: center;
   margin: auto;
 }
