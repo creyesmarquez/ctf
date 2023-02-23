@@ -1,16 +1,26 @@
-#description {
-  font-size: 17px;
-  font-weight: 300;
-  color: #1b2246;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  padding: 1%;
-}
-
 #title {
   font-size: 5vw;
+  font-weight: 500;
   color: #1b2246;
+  text-align: center;
+  margin: auto;
+}
+
+#sub-title {
+  font-size: 2vw;
+  font-weight: 200;
+  color: #1b2246;
+  text-align: center;
+  margin: auto;
+}
+
+#description {
+  font-size: 3vw;
+  font-weight: 300;
+  color: #1b2246;
+  text-align: left;
+  padding: 5%;
+  margin: auto;
 }
 
 #welcome-home {

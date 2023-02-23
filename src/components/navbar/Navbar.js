@@ -37,8 +37,8 @@ function SiteLogo() {
     <Link to="/" className="navbar-brand">
       <img
         style={{
+          width: "60vw",
           maxWidth: 300,
-          width: 300,
         }}
         src={logo}
         alt="churchLogo"
