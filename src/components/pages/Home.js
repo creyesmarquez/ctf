@@ -22,7 +22,14 @@ export default function Home() {
           </Row>
         </div>
 
-        <video className="videoTag" width="100%" autoPlay loop muted>
+        <video
+          className="videoTag"
+          width="100%"
+          autoPlay
+          loop
+          muted
+          playsinline
+        >
           <source src={video} type="video/mp4" />
         </video>
         <Row id="description" className="d-grid justify-content-md-center mt-2">
