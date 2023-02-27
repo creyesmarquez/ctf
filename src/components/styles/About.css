@@ -1,0 +1,25 @@
+#services-title {
+  color: black;
+  padding: initial;
+  font-weight: 700;
+  margin-top: 2rem;
+  font-size: 3rem;
+}
+
+#services-subtitle {
+  color: black;
+  padding: initial;
+  font-weight: 500;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+#description-services {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: gray;
+  text-align: left;
+  padding: 5%;
+  margin: auto;
+}
