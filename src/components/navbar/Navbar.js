@@ -59,7 +59,7 @@ function Navbar() {
         aria-expanded="false"
         aria-label="Toggle navigation"
       ></div>
-      <nav className="navbar navbar-expand-lg navbar-light">
+      <nav className="navbar fixed-top navbar-expand-lg bg-light  ">
         <SiteLogo />
         <button
           className="navbar-toggler"

@@ -1,4 +1,5 @@
 import React from "react";
+import ReactPlayer from "react-player";
 import { useTranslation } from "react-i18next";
 import { Row, Col } from "react-bootstrap";
 import "../styles/Home.css";
@@ -21,9 +22,9 @@ export default function Home() {
             </Col>
           </Row>
         </div>
-
-        <video
+        {/* <video
           className="videoTag"
+          controls
           width="100%"
           autoPlay
           loop
@@ -31,7 +32,17 @@ export default function Home() {
           playsinline
         >
           <source src={video} type="video/mp4" />
-        </video>
+        </video> */}
+        <ReactPlayer
+          className="react-player"
+          url={video}
+          loop="true"
+          playing="true"
+          muted="true"
+          width="100%"
+          height="auto"
+          playsinline="true"
+        />
         <Row id="description" className="d-grid justify-content-md-center mt-2">
           {t("welcome-description")}
         </Row>
