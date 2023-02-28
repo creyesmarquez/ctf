@@ -1,5 +1,5 @@
 #title {
-  font-size: 5vw;
+  font-size: 3rem;
   font-weight: 700;
   color: white;
   text-align: center;
@@ -7,11 +7,11 @@
 }
 
 #title-container {
-  background-color: #7e86a5;
+  background-color: #1b2246;
 }
 
 #sub-title {
-  font-size: 2vw;
+  font-size: 1.5rem;
   font-weight: 200;
   color: white;
   text-align: center;
@@ -19,9 +19,9 @@
 }
 
 #description {
-  font-size: 3vw;
+  font-size: 2rem;
   font-weight: 300;
-  color: #1b2246;
+  color: gray;
   text-align: left;
   padding: 5%;
   margin: auto;

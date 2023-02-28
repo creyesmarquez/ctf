@@ -1,15 +1,14 @@
 #donation-title {
-  font-size: 5vw;
+  font-size: 60px;
   color: #1b2246;
   font-weight: 700;
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 
 #donation-description {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 300;
-  color: #192043;
+  color: gray;
 }
 
 #more-donations {
@@ -35,20 +34,25 @@
 
 #don-separator-1 {
   background-color: #7e86a5;
-  height: 30vw;
+  padding: 5%;
+  height: fit-content;
   align-content: center;
 }
 
 #don-separator-1-title {
   justify-content: center;
-  font-size: 6vw;
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 500;
   color: white;
+  width: auto;
+  max-width: fit-content;
 }
 
 #don-separator-1-content {
   margin: auto;
-  width: 50vw;
+  width: fit-content;
   text-align: center;
-  font-size: 2vw;
+  font-size: 2rem;
   color: white;
 }
