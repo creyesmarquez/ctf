@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { Row, Col } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 import "../styles/About.css";
 
 export default function About() {
