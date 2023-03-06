@@ -40,13 +40,12 @@
 }
 
 #don-separator-1-title {
-  justify-content: center;
+  justify-content: space-around;
   text-align: center;
   font-size: 3.5rem;
   font-weight: 500;
   color: white;
-  width: auto;
-  max-width: fit-content;
+  margin: initial;
 }
 
 #don-separator-1-content {

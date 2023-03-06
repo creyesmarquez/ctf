@@ -22,30 +22,31 @@ export default function Home() {
             </Col>
           </Row>
         </div>
-        {/* <video
-          className="videoTag"
-          controls
-          width="100%"
-          autoPlay
-          loop
-          muted
-          playsinline
-        >
-          <source src={video} type="video/mp4" />
-        </video> */}
         <ReactPlayer
           className="react-player"
           url={video}
-          loop="true"
-          playing="true"
-          muted="true"
+          loop={true}
+          playing={true}
+          muted={true}
           width="100%"
           height="auto"
-          playsinline="true"
+          playsinline={true}
         />
-        <Row id="description" className="d-grid justify-content-md-center mt-2">
-          {t("welcome-description")}
+        <Row id="values" className="d-flex justify-content-md-center">
+          <Col id="value">
+            <Row id="value-title">{t("our-values-1")}</Row>
+            <Row id="value-description">{t("our-values-1-description")}</Row>
+          </Col>
+          <Col id="value">
+            <Row id="value-title">{t("our-values-2")}</Row>
+            <Row id="value-description">{t("our-values-2-description")}</Row>
+          </Col>
+          <Col id="value">
+            <Row id="value-title">{t("our-values-3")}</Row>
+            <Row id="value-description">{t("our-values-3-description")}</Row>
+          </Col>
         </Row>
+        <Row id="description">{t("welcome-description")}</Row>
       </Row>
     </>
   );

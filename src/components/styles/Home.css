@@ -34,3 +34,32 @@
   left: 50%;
   transform: translate(-50%, -100%);
 }
+
+#values {
+  margin: auto;
+  margin-top: 1%;
+  padding: 2%;
+}
+
+#value {
+  display: grid;
+  justify-content: space-around;
+  align-items: center;
+  height: fit-content;
+}
+
+#value-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #1b2246;
+  margin: auto;
+  text-align: center;
+}
+
+#value-description {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: gray;
+  text-align: center;
+  margin: auto;
+}

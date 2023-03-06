@@ -1,0 +1,31 @@
+#join-title {
+  color: black;
+  font-size: 3rem;
+  font-weight: 700;
+  padding-top: 5rem;
+  text-align: center;
+}
+
+#member {
+  display: grid;
+  justify-content: space-around;
+  justify-items: center;
+}
+
+#member-picture-container {
+  width: 15rem;
+}
+
+#member-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: black;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+#member-picture {
+  padding: 0%;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
