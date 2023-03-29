@@ -2,8 +2,11 @@
   color: black;
   font-size: 3rem;
   font-weight: 700;
-  padding-top: 5rem;
   text-align: center;
+}
+
+#join-row {
+  justify-content: center;
 }
 
 #member {
@@ -16,6 +19,10 @@
   width: 15rem;
 }
 
+#leader-picture-container {
+  width: 20rem;
+}
+
 #member-name {
   font-size: 1rem;
   font-weight: 700;
@@ -24,8 +31,24 @@
   padding-bottom: 1rem;
 }
 
+#member-title {
+  font-size: 1rem;
+  color: black;
+  padding-bottom: 1rem;
+}
+
 #member-picture {
   padding: 0%;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+#member-row {
+  padding-top: 3rem;
+}
+
+#members-container {
+  padding-top: 3rem;
+  padding-left: 12rem;
+  padding-right: 12rem;
 }
