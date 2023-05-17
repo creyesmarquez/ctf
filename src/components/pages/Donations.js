@@ -57,11 +57,11 @@ const Paypal = () => {
 
 export default function Donations() {
   const { t } = useTranslation();
-  const logo = require(`../../assets/images/test2.png`);
+  const crowd = require(`../../assets/images/crowd.jpeg`);
   return (
     <>
       <div id="image-container">
-        <img src={logo} className="img-fluid" alt="logo" />
+        <img src={crowd} className="img-fluid" alt="logo" />
         <div id="centered">{t("donation-centered")}</div>
       </div>
       <Row id="don-separator-1">

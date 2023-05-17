@@ -15,8 +15,6 @@ export default function Team() {
   const brianTanyaPic = require(`../../assets/images/team/brian-tanya.jpeg`);
   const jacobPic = require(`../../assets/images/team/jacob.jpeg`);
   const dyanePic = require(`../../assets/images/team/dyane.jpeg`);
-  const joannePic = require(`../../assets/images/team/joanne.jpeg`);
-  const davidPic = require(`../../assets/images/team/david.jpeg`);
   const janPic = require(`../../assets/images/team/jan.jpeg`);
   const joelRachel = require(`../../assets/images/team/joel-rachel.jpeg`);
   const juliePic = require(`../../assets/images/team/julie.jpeg`);
@@ -51,12 +49,6 @@ export default function Team() {
         <Row id="member-row">
           <Col id="member">
             <Row id="member-picture-container">
-              <img src={janPic} id="member-picture" alt="logo" />
-            </Row>
-            <Row id="member-name">Jan Van Neste</Row>
-          </Col>
-          <Col id="member">
-            <Row id="member-picture-container">
               <img src={joelRachel} id="member-picture" alt="logo" />
             </Row>
             <Row id="member-name">Joel & Rachel Dagenais</Row>
@@ -89,9 +81,17 @@ export default function Team() {
           </Col>
           <Col id="member">
             <Row id="member-picture-container">
-              <img src={jacobPic} id="member-picture" alt="logo" />
+              <img src={janPic} id="member-picture" alt="logo" />
             </Row>
-            <Row id="member-name">Jacob Marcoux</Row>
+            <Row id="member-name">Jan Van Neste</Row>
+          </Col>
+        </Row>
+        <Row id="member-row">
+          <Col id="member">
+            <Row id="member-picture-container">
+              <img src={juliePic} id="member-picture" alt="logo" />
+            </Row>
+            <Row id="member-name">Julie Brisson</Row>
           </Col>
           <Col id="member">
             <Row id="member-picture-container">
@@ -99,25 +99,11 @@ export default function Team() {
             </Row>
             <Row id="member-name">Dyane Beaudette</Row>
           </Col>
-        </Row>
-        <Row id="member-row">
           <Col id="member">
             <Row id="member-picture-container">
-              <img src={davidPic} id="member-picture" alt="logo" />
+              <img src={jacobPic} id="member-picture" alt="logo" />
             </Row>
-            <Row id="member-name">David Bouffard</Row>
-          </Col>
-          <Col id="member">
-            <Row id="member-picture-container">
-              <img src={joannePic} id="member-picture" alt="logo" />
-            </Row>
-            <Row id="member-name">Joanne Kingsley</Row>
-          </Col>
-          <Col id="member">
-            <Row id="member-picture-container">
-              <img src={juliePic} id="member-picture" alt="logo" />
-            </Row>
-            <Row id="member-name">Julie Brisson</Row>
+            <Row id="member-name">Jacob Marcoux</Row>
           </Col>
         </Row>
         <Row id="member-row"></Row>
