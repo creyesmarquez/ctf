@@ -10,7 +10,7 @@ const Transfert = () => {
 
   return (
     <>
-      <Row>
+      <Row className="mt-5">
         <h4>E-Transfer</h4>
         <p id="donation-description">{t("transfer-description")}</p>
       </Row>
@@ -38,18 +38,14 @@ const Paypal = () => {
       </Row>
       <Row>
         <a
+          class="button"
           href="https://www.paypal.com/donate?hosted_button_id=7DBCL2Z672PNN"
           target="_blank"
           rel="noreferrer"
         >
-          <img
-            className="img-fluid"
-            width="220"
-            align="center"
-            src={logo}
-            alt="logo"
-          />
+          Donate
         </a>
+        <img style={{ width: "150px" }} src={logo} alt="logo" />
       </Row>
     </>
   );

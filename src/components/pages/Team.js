@@ -27,7 +27,7 @@ export default function Team() {
           <div id="join-title">{t("join-team")}</div>
           <ButtonMailto
             label="JOIN"
-            mailto="mailto:marc.peiry@catchthefire.com"
+            mailto="mailto:daniel.peiry@catchthefire.com"
           />
         </Row>
         <Row id="member-row">

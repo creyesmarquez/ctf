@@ -8,7 +8,7 @@ export default function About() {
   const logo = require(`../../assets/images/young-adults.jpeg`);
   const logo2 = require(`../../assets/images/young-adults2.jpeg`);
   const logo3 = require(`../../assets/images/young-adults3.jpeg`);
-  const ignitelogo = require(`../../assets/images/ignite-group.jpeg`);
+  const presencePicture = require(`../../assets/images/presence-schedule.jpg`);
   return (
     <>
       <Row
@@ -52,14 +52,11 @@ export default function About() {
           />
         </Row>
         <div id="services-subtitle">{t("ignite-group-title")}</div>
-        {t("ignite-group-1")} <br />
-        {t("ignite-group-2")} <br />
-        {t("ignite-group-3")}
-        <Row className="mt-5">
+        <Row className="">
           <img
             align="center"
             style={{ width: "auto", padding: "0" }}
-            src={ignitelogo}
+            src={presencePicture}
             alt="logo"
           />
         </Row>
