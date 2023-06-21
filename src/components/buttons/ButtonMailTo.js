@@ -1,19 +1,11 @@
 import React from "react";
-import { Button } from "react-bootstrap";
 import "./ButtonMailTo.css";
 
 const ButtonMailto = ({ mailto, label }) => {
   return (
-    <Button
-      id="button-mailto"
-      to="#"
-      onClick={(e) => {
-        window.location.href = mailto;
-        e.preventDefault();
-      }}
-    >
+    <a href={mailto} id="button-mailto">
       {label}
-    </Button>
+    </a>
   );
 };
 

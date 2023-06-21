@@ -4,24 +4,15 @@ import { useTranslation } from "react-i18next";
 import { Row, Col } from "react-bootstrap";
 import "../styles/Home.css";
 import video from "../../assets/videos/ctfsherbrooke.mp4#t=0.001";
+import Separator from "../separators/Separator";
 
 export default function Home() {
-  //const logo = require(`../../assets/images/sherbrooke-bg.jpeg`);
   const { t } = useTranslation();
 
   return (
     <>
       <Row>
-        <div id="title-container">
-          <Row id="title" className="d-grid justify-content-md-center mt-2">
-            {t("welcome")}
-          </Row>
-          <Row id="sub-title">
-            <Col>
-              <p>{t("weekly-reunion")}</p>
-            </Col>
-          </Row>
-        </div>
+        <Separator title={t("welcome")} subtitle={t("weekly-reunion")} />
         <ReactPlayer
           className="react-player"
           url={video}

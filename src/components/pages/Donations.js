@@ -3,6 +3,7 @@ import { Row, Col } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import { MoreDonations } from "../donations/MoreDonations";
 import "../styles/Donations.css";
+import Separator from "../separators/Separator";
 
 const Transfert = () => {
   const { t } = useTranslation();
@@ -60,14 +61,10 @@ export default function Donations() {
         <img src={crowd} className="img-fluid" alt="logo" />
         <div id="centered">{t("donation-centered")}</div>
       </div>
-      <Row id="don-separator-1">
-        <Row id="don-separator-1-title"> {t("don-separator-1-title")}</Row>
-        <Row xs={2} id="don-separator-1-content">
-          {" "}
-          {t("don-separator-1-content")}
-        </Row>
-      </Row>
-
+      <Separator
+        title={t("don-separator-1-title")}
+        subtitle={t("don-separator-1-content")}
+      />
       <Row className="d-flex justify-content-md-center mt-5 ">
         <Col>
           <p id="donation-title">{t("donation-title")}</p>
