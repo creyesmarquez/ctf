@@ -9,6 +9,8 @@ export default function About() {
   const logo2 = require(`../../assets/images/young-adults2.jpeg`);
   const logo3 = require(`../../assets/images/young-adults3.jpeg`);
   const presencePicture = require(`../../assets/images/presence-schedule.jpg`);
+  const youngAdultsDates = t("young-adults-4", { returnObjects: true });
+
   return (
     <>
       <Row
@@ -31,6 +33,13 @@ export default function About() {
         {t("young-adults-1")} <br />
         {t("young-adults-2")} <br />
         {t("young-adults-3")}
+        <br />
+        <br />
+        {youngAdultsDates.map((date) => (
+          <div style={{ padding: "initial" }}>
+            {date} <br />
+          </div>
+        ))}
         <Row className="mt-5">
           <img
             className="img-fluid"
