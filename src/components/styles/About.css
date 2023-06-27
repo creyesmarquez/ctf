@@ -1,24 +1,33 @@
 #services-title {
-  color: black;
+  font-family: Helvetica;
   padding: initial;
   font-weight: 700;
   font-size: 3rem;
 }
 
 #services-subtitle {
-  color: black;
+  font-family: Helvetica;
   padding: initial;
-  font-weight: 500;
+  font-weight: 400;
   margin-top: 2rem;
   margin-bottom: 2rem;
   font-size: 2rem;
 }
 
 #description-services {
-  font-size: 1.5rem;
-  font-weight: 300;
-  color: gray;
+  font-size: 1.2rem;
   text-align: left;
   padding: 5%;
   margin: auto;
+}
+
+#young-adults-schedule {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #1b2246;
+  text-align: left;
+}
+
+#presence-container {
+  background-color: #f6f2f1;
 }
