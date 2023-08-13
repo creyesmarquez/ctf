@@ -1,6 +1,7 @@
 #don-separator-1 {
-  background-color: #7e86a5;
+  background-color: #1b2246;
   padding: 5%;
+  margin: initial;
   height: fit-content;
   align-content: center;
 }
@@ -8,7 +9,7 @@
 #don-separator-1-title {
   justify-content: space-around;
   text-align: center;
-  font-size: 3.5rem;
+  font-size: 2.2rem;
   font-weight: 500;
   color: white;
   margin: initial;
@@ -18,6 +19,6 @@
   margin: auto;
   width: fit-content;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: white;
 }

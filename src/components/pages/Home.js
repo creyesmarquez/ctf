@@ -8,11 +8,12 @@ import Separator from "../separators/Separator";
 
 export default function Home() {
   const { t } = useTranslation();
+  const emergence = t("conference-emergence", { returnObjects: true });
+  const conferencePicture = require(`../../assets/images/conference-emergence.png`);
 
   return (
     <>
       <Row>
-        <Separator title={t("welcome")} subtitle={t("weekly-reunion")} />
         <ReactPlayer
           className="react-player"
           url={video}
@@ -38,6 +39,37 @@ export default function Home() {
           </Col>
         </Row>
         <Row id="description">{t("welcome-description")}</Row>
+        <Separator title={t("welcome")} subtitle={t("weekly-reunion")} />
+        <Row id="description">
+          <Col>
+            <img
+              align="center"
+              style={{
+                maxWidth: "80%",
+                minWidth: "300px",
+                paddingLeft: "0",
+                paddingTop: "1rem",
+              }}
+              src={conferencePicture}
+              alt="logo"
+            />
+          </Col>
+          <Col>
+            {emergence.map((info) => (
+              <div style={{ padding: "initial" }}>
+                {info} <br />
+              </div>
+            ))}
+            <a
+              class="button"
+              href="https://lecarrefour.churchcenter.com/registrations/events/1846588"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {t("register")}
+            </a>
+          </Col>
+        </Row>
       </Row>
     </>
   );
