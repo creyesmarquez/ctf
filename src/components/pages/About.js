@@ -6,7 +6,7 @@ import "../styles/About.css";
 export default function About() {
   const { t } = useTranslation();
   const youngAdultsPicture = require(`../../assets/images/young-adults.jpeg`);
-  const presencePicture = require(`../../assets/images/presence-schedule.jpg`);
+  const presencePicture = require(`../../assets/images/presence-schedule.jpeg`);
   const youngAdultsDates = t("young-adults-4", { returnObjects: true });
 
   return (
@@ -73,7 +73,7 @@ export default function About() {
             marginTop: "2rem",
           }}
         ></span>
-        <div id="presence-container">
+        <div>
           <Row>
             <img
               align="center"
