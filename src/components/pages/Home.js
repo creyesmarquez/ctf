@@ -1,29 +1,48 @@
 import React from "react";
-import ReactPlayer from "react-player";
 import { useTranslation } from "react-i18next";
 import { Row, Col } from "react-bootstrap";
 import "../styles/Home.css";
-import video from "../../assets/videos/ctfsherbrooke.mp4#t=0.001";
 import Separator from "../separators/Separator";
+import { MDBCarousel, MDBCarouselItem } from "mdb-react-ui-kit";
 
 export default function Home() {
   const { t } = useTranslation();
   const emergence = t("conference-emergence", { returnObjects: true });
   const conferencePicture = require(`../../assets/images/conference-emergence.png`);
+  const carousel1 = require(`../../assets/images/carousel1.jpeg`);
+  const carousel2 = require(`../../assets/images/carousel2.jpeg`);
+  const carousel3 = require(`../../assets/images/carousel3.jpeg`);
+  const carousel4 = require(`../../assets/images/carousel4.jpeg`);
 
   return (
     <>
       <Row>
-        <ReactPlayer
-          className="react-player"
-          url={video}
-          loop={true}
-          playing={true}
-          muted={true}
-          width="100%"
-          height="auto"
-          playsinline={true}
-        />
+        <MDBCarousel showControls showIndicators fade>
+          <MDBCarouselItem
+            className="w-100 d-block"
+            itemId={1}
+            src={carousel1}
+            alt="..."
+          />
+          <MDBCarouselItem
+            className="w-100 d-block"
+            itemId={2}
+            src={carousel2}
+            alt="..."
+          />
+          <MDBCarouselItem
+            className="w-100 d-block"
+            itemId={3}
+            src={carousel3}
+            alt="..."
+          />
+          <MDBCarouselItem
+            className="w-100 d-block"
+            itemId={4}
+            src={carousel4}
+            alt="..."
+          />
+        </MDBCarousel>
         <Row id="values" className="d-flex justify-content-md-center">
           <Col id="value">
             <Row id="value-title">{t("our-values-1")}</Row>
