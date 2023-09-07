@@ -47,7 +47,7 @@ export default function About() {
             <br />
             <div id="young-adults-schedule">
               {youngAdultsDates.map((date) => (
-                <div style={{ padding: "initial" }}>
+                <div key={date} style={{ padding: "initial" }}>
                   {date} <br />
                 </div>
               ))}

@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <>
       <Row>
-        <MDBCarousel showControls showIndicators fade>
+        <MDBCarousel showControls showIndicators fade dealy={7000}>
           <MDBCarouselItem
             className="w-100 d-block"
             itemId={1}
@@ -75,18 +75,20 @@ export default function Home() {
           </Col>
           <Col>
             {emergence.map((info) => (
-              <div style={{ padding: "initial" }}>
+              <div key={info} style={{ padding: "initial" }}>
                 {info} <br />
               </div>
             ))}
-            <a
-              class="button"
-              href="https://lecarrefour.churchcenter.com/registrations/events/1846588"
-              target="_blank"
-              rel="noreferrer"
-            >
-              {t("register")}
-            </a>
+            <div id="register-button">
+              <a
+                className="button"
+                href="https://lecarrefour.churchcenter.com/registrations/events/1846588"
+                target="_blank"
+                rel="noreferrer"
+              >
+                {t("register")}
+              </a>
+            </div>
           </Col>
         </Row>
       </Row>
