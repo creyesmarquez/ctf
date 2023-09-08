@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
 body {
-  font-family: Nort;
+  font-family: "Montserrat", sans-serif;
   color: #1b2246;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

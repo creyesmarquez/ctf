@@ -39,7 +39,7 @@ const Paypal = () => {
       </Row>
       <Row>
         <a
-          class="button"
+          className="button"
           href="https://www.paypal.com/donate?hosted_button_id=7DBCL2Z672PNN"
           target="_blank"
           rel="noreferrer"
