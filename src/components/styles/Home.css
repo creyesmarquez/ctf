@@ -21,9 +21,11 @@
 #description {
   font-size: 1.2rem;
   font-weight: 300;
-  text-align: center;
   padding: 5% 10% 5%;
-  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
 }
 
 #welcome-home {
